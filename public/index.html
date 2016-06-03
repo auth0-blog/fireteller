@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FireTeller</title>
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdn.auth0.com/js/lock-9.min.js"></script>
+    <script src="https://cdn.auth0.com/w2/auth0-6.7.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+    <style>
+      .em {
+        width: 32px;
+        height: 32px;
+        margin-right: 25px;
+        margin-bottom: 25px;
+      }
+      .top-bar {
+        margin-top: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="clearfix top-bar">
+          <div id="email" class="pull-left"></div>
+          <div class="pull-right">
+            <a onclick="logout()" class="btn btn-danger" id="logout-btn">Logout</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-10 col-sm-offset-1">
+        <h2 class="text-center">Once Upon a Time...</h2>
+
+        <div class="jumbotron">
+          <div id="story"></div>
+        </div>
+      </div>
+
+      <div class="col-sm-8 col-sm-offset-2">
+        <div id="signin-btn" class="btn btn-success btn-block" onclick="login()">Sign Up To Contribute</div>
+        <div id="contrinbute">
+          <p><strong>Contribute <small>(Select an emoji to add it to the story)</small> <span class="pull-right" onclick="getRandomEmoji()">Refresh</span></strong></p>
+          <div id="options"></div>
+        </div>
+      </div>
+
+      <div class="col-sm-8 col-sm-offset-2">
+        <h2 class="text-center">Stories</h2>
+        <div id="stories"></div>
+      </div>
+    </div>
+    <script src="./emoji.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
