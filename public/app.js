@@ -87,7 +87,7 @@ function login(){
         id_token : id_token,
         api : 'firebase',
         scope : 'openid name email displayName',
-        targetClientId: AUTH0_CLIENT_ID
+        target: AUTH0_CLIENT_ID
       };
       auth0.getDelegationToken(options, function(err, result){
         if(!err){
