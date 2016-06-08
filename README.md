@@ -1,5 +1,5 @@
 # FireTeller
-FireTeller is a Firebase app that integrates Auth0 for user authentication.
+FireTeller is a Firebase app that integrates Auth0 for user authentication. This app was built as a sample application for the blog post which covers how you can build serverless application with the Firebase 3.0 SDK. Check out the blog post [here](https://auth0.com/blog/2016/06/08/firebase-authentication-with-firebase-3.0-and-auth0-integration/) and a live demo of the app [here](https://project-8302152786657556368.firebaseapp.com/)
 
 ![FireTeller](https://cdn.auth0.com/blog/new-firebase/fireteller-app.png)
 
