@@ -8,7 +8,7 @@ FireTeller is a Firebase app that integrates Auth0 for user authentication. This
 FireTeller uses the Firebase 3.0 SDK. You will need a Firebase and Auth0 account. Sign up for a free [Firebase](https://firebase.google.com) and [Auth0](https://auth0.com/signup) account before continuing.
 
 1. Clone the repo
-2. Install the Firebase CLI by running `npm intall firebase-tools -g` (you will need Node and NPM)
+2. Install the Firebase CLI by running `npm install firebase-tools -g` (you will need Node and NPM)
 3. Navigate to the directory where you cloned the repo
 4. Run `firebase init` and follow the on-screen instructions. **DO NOT OVERWRITE THE INDEX.HTML FILE**
 5. Open the `app.js` file in the `public` directory and update the variables at the top with your keys
